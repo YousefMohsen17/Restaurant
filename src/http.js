@@ -18,6 +18,6 @@ export async function updateOrders({ items, customer }) {
     throw new Error("Failed to update orders");
   }
   const data = await response.json();
-  console.log(data.message);
+  
   return data;
 }
